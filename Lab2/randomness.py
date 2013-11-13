@@ -13,9 +13,17 @@ def CoinFlip2(n,prob):
 			return "H"
 		else:
 			return "T"
+def CoinFlip3(Flip):
+	z = 0	
+	while (z<Flip):
+		rand = randint(0,1)		
+		if (rand==0):
+			print "H"
+		else:
+			print "T"
+		z+=1
 
 if __name__ == "__main__":
-	prob = int(raw_input("what is the probability of heads?"))
-	n = raw_input("press n to flip")
-	print CoinFlip2(n,prob)
+	Flip = int(raw_input("how many flips?"))
+	CoinFlip3(Flip)
 		
