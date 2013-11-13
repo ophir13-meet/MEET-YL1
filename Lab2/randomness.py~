@@ -14,12 +14,11 @@ def CoinFlip2(n,prob):
 		else:
 			return "T"
 def CoinFlip3(Flip):
-	rand = randint(0,1)
 	z = 0	
 	while (z<Flip):
+		rand = randint(0,1)		
 		if (rand==0):
 			print "H"
-			
 		else:
 			print "T"
 		z+=1

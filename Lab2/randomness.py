@@ -14,14 +14,16 @@ def CoinFlip2(n,prob):
 		else:
 			return "T"
 def CoinFlip3(Flip):
-	z = 0	
+	z = 0
+	Flippy = []	
 	while (z<Flip):
 		rand = randint(0,1)		
 		if (rand==0):
-			print "H"
+			Flippy.append("Heads")
 		else:
-			print "T"
+			Flippy.append("Tales")		
 		z+=1
+	print Flippy
 
 if __name__ == "__main__":
 	Flip = int(raw_input("how many flips?"))
